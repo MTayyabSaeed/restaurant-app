@@ -1,0 +1,58 @@
+body {
+		font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+		padding: 0;
+		width: 550px;
+		height: 650px;
+		margin: auto;
+		background:url(https://subtlepatterns.com/patterns/little_pluses.png) #cacaca;
+		border: 5px solid #cacaca;
+		border-radius: 10px;
+}
+
+h1 {
+		color: #d54d7b;
+		font-family: "Great Vibes", cursive; line-height: 160px;
+		font-weight: normal;
+		margin-bottom: 0px;
+		margin-top: 40px; 
+		text-align: center; 
+		text-shadow: 0 1px 1px #fff;
+		border-top: 3px solid #ccc;
+		border-bottom: 3px solid #ccc;
+		border-margin: 100px;
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+		font-weight: 400;
+		line-height: 1.4;
+		margin-top: 20px;
+		margin-bottom: 10px;
+}
+
+
+ul {
+		list-style-type: none
+}
+
+a:-webkit-any-link {
+		color: #2f362f;
+		cursor: pointer;
+		font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+		text-decoration: none;
+}
+
+.restaurantname:hover {
+		font-size: 30px;
+		background: #f6f6f6;
+		border-color:rgba(0,0,0,0.5);
+		color:rgba(0,0,0,0.5);
+}
+
+li {
+		border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+		border: none
+}
+
