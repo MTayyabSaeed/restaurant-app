@@ -2,8 +2,9 @@ body {
 		font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
 		padding: 0;
 		width: 550px;
-		height: 650px;
 		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 20px;
 		background:url(https://subtlepatterns.com/patterns/little_pluses.png) #cacaca;
 		border: 5px solid #cacaca;
 		border-radius: 10px;
@@ -15,7 +16,6 @@ h1 {
 		font-weight: normal;
 		margin-bottom: 0px;
 		margin-top: 40px; 
-		text-align: center; 
 		text-shadow: 0 1px 1px #fff;
 		border-top: 3px solid #ccc;
 		border-bottom: 3px solid #ccc;
@@ -23,12 +23,12 @@ h1 {
 }
  
 h1, h2, h3, h4, h5, h6 {
+		text-align: center;
 		font-weight: 400;
 		line-height: 1.4;
 		margin-top: 20px;
 		margin-bottom: 10px;
 }
-
 
 ul {
 		list-style-type: none
@@ -41,13 +41,6 @@ a:-webkit-any-link {
 		text-decoration: none;
 }
 
-.restaurantname:hover {
-		font-size: 30px;
-		background: #f6f6f6;
-		border-color:rgba(0,0,0,0.5);
-		color:rgba(0,0,0,0.5);
-}
-
 li {
 		border-bottom: 1px solid #ccc;
 }
@@ -55,4 +48,48 @@ li {
 li:last-child {
 		border: none
 }
+
+.restaurantname:hover {
+		font-size: 30px;
+		background: #f6f6f6;
+		border-color:rgba(0,0,0,0.5);
+		color:rgba(0,0,0,0.5);
+}
+
+
+a:hover {
+		font-size: 30px;
+		background: #f6f6f6;
+		border-color:rgba(0,0,0,0.5);
+		color:rgba(0,0,0,0.5);
+}
+
+
+.itemname {
+		width: 50%
+		float: left;
+
+}
+
+.price {
+		text-align: right;
+		width: 50%;
+		float: right;
+}
+
+.btnedit {
+		background-color: #008CBA;
+}
+
+.btndelete {
+		background-color: #f44336;
+}
+
+.btndelete a:hover,
+.btnedit a:hover {
+		font-size: 20px;
+		background: none;
+}
+
+
 
