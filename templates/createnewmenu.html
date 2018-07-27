@@ -1,23 +1,43 @@
 <html>
+
+		<head>
+				<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+
+		</head>
 		<body>
-				<h1>Input details for menu item</h1>
+				<h3>Enter details for menu item to create</h3>
 				<form action="{{ url_for('create_menu_item', restaurant_id=restaurant_id) }}" method="POST">
-						<p>Name</p>
-						<input type="text" placeholder="New Item" size=30 name='new_menu_item'>
-						<br>
-						<p>Course</p>
-						<input type="text" placeholder="course" size=30 name="item_course">
-						<br>
-						<p>Description<p>
-						<input type="text" placeholder="description" size=100 
-						name="item_desc">
-						<br>
-						<p>Price</p>
-						<input type="text" placeholder="$0.00" size=30 name="item_price">
-						<br>
-						<br>
-						<input type="submit" value="Create Menu Item">
-						<a href="{{url_for('restaurant_menu', restaurant_id = restaurant_id)}}">Cancel</a>
+
+						<ul class="form-style-1">
+								<li><label>Name <span class="required">*</span></label>
+										<input type="text" placeholder="New Item"
+										size=30 name='new_menu_item'>
+								</li>
+								<li>
+										<label>Course <span class="required">*</span></label>
+										<input type="text" placeholder="course" size=30 
+										name="item_course">
+								</li>
+								<li>
+										<label>Description <span class="required">*</span>
+												<label>
+										<textarea type="text" placeholder="description" size=10 
+															  name="item_desc"></textarea>
+								</li>
+								<li>
+										<label>Price <span class="required">*</span></label>
+										<input type="text" placeholder="$0.00" size=30 
+										name="item_price">
+								</li>
+								<li>
+										<input type="submit" value="Create Menu Item">
+										<button class="cancel-btn"><a href="{{url_for('restaurant_menu', 
+														restaurant_id = restaurant_id)}}">
+														Cancel</a>
+										</button>
+								</li>
+
+						</ul>
 				</form>
 
 		</body>

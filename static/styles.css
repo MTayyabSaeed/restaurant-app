@@ -30,6 +30,20 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 10px;
 }
 
+p {
+		text-align: center;
+		font-weight: 400;
+		line-height: 1.4;
+		margin-top: 20px;
+		margin-bottom: 10px;
+}
+
+input {
+		width: 200px;
+		font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+		font-size: 82%;
+}
+
 ul {
 		list-style-type: none
 }
@@ -41,11 +55,11 @@ a:-webkit-any-link {
 		text-decoration: none;
 }
 
-li {
+.lineafter {
 		border-bottom: 1px solid #ccc;
 }
 
-li:last-child {
+.lineafter li:last-child {
 		border: none
 }
 
@@ -56,14 +70,13 @@ li:last-child {
 		color:rgba(0,0,0,0.5);
 }
 
-
-a:hover {
+.hoverlink:hover,
+.restaurantname:hover {
 		font-size: 30px;
 		background: #f6f6f6;
 		border-color:rgba(0,0,0,0.5);
 		color:rgba(0,0,0,0.5);
 }
-
 
 .itemname {
 		width: 50%
@@ -78,17 +91,123 @@ a:hover {
 }
 
 .btnedit {
-		background-color: #008CBA;
+		background: #1abc9c;
 }
 
 .btndelete {
-		background-color: #f44336;
+		background: #f44336;
 }
 
 .btndelete a:hover,
 .btnedit a:hover {
 		font-size: 20px;
 		background: none;
+}
+
+.required{
+	    color:red;
+}
+
+.form-style-1 {
+		margin:10px auto;
+		max-width: 400px;
+		padding: 20px 12px 10px 20px;
+		font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-style-1 li {
+	    padding: 0;
+	    display: block;
+	    list-style: none;
+	    margin: 10px 0 0 0;
+}
+
+.form-style-1 label{
+   		margin:0 0 3px 0;
+   		padding:0px;
+   		display:block;
+   		font-weight: bold;
+}
+
+.scrollabletextbox {
+	    height: 100px;
+	    width: 200px;
+	    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	    font-size: 82%;
+}
+
+.form-style-1 input[type=text], 
+textarea {
+   		font-family: Georgia, "Times New Roman", Times, serif;
+   		background: rgba(255,255,255,.1);
+   		border: none;
+   		border-radius: 4px;
+   		font-size: 16px;
+   		margin: 0;
+   		outline: none;
+   		padding: 7px;
+   		width: 100%;
+   		box-sizing: border-box; 
+   		-webkit-box-sizing: border-box;
+   		-moz-box-sizing: border-box; 
+   		background-color: #e8eeef;
+   		color:#8a97a0;
+   		-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+   		box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+   		margin-bottom: 30px;
+}
+
+.form-style-1 textarea {
+		height: 120px;
+}
+.form-style-1 button {
+		height: 40px;
+
+
+
+}
+
+
+button {
+		background: #76B3FA;
+		border-radius: 50px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 1.45em;
+		margin: 0 15px;
+		width: 30%;
+		display: relative;
+}
+
+.form-style-1 .edit-btn:focus {
+		background: #d2d9dd;
+}
+
+.form-style-1 .edit-btn {
+    	background: #1abc9c;
+}
+
+.form-style-1 .cancel-btn {
+		background: #D3D3D3;
+}
+
+.form-style-1 .edit-btn:hover {
+    	background: #109177;
+		font-size: 18px;
+}
+
+.form-style-1 .delete-btn {
+		background: red;
+}
+
+.form-style-1 .delete-btn:hover {
+		background: #8B0000;
+}
+
+.form-style-1 
+.cancel-btn:hover {
+		background: #A9A9A9;
+		font-size: 18px;
 }
 
 
