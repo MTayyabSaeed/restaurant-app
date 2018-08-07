@@ -9,11 +9,10 @@
 				<form action="{{ url_for('delete_menu_item', restaurant_id=restaurant_id, 
 						menu_id=menu_item.id) }}" method="POST">
 						<ul class="form-style-1">
-								<li><button class="delete-btn"type="submit">Yes, Delete</button>
-								<button class="cancel-btn">
-												<a href="{{ url_for('restaurant_menu', 
-												restaurant_id=restaurant_id) }}">No, Cancel<a>
-								</button></li>
+								<li><span>
+												<input class="delete-btn" type="submit" value="Yes, Delete"></span>
+									<span>
+											<label class="cancel-btn"><a href="{{ url_for('restaurant_menu', restaurant_id=restaurant_id) }}">No, Cancel</a></label></span></li>
 						</ul>
 				</form>
 		</body>

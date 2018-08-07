@@ -81,6 +81,7 @@ a:-webkit-any-link {
 .itemname {
 		width: 50%
 		float: left;
+
 }
 
 .price {
@@ -89,6 +90,19 @@ a:-webkit-any-link {
 		float: right;
 }
 
+.btnedit {
+		background: #1abc9c;
+}
+
+.btndelete {
+		background: #f44336;
+}
+
+.btndelete a:hover,
+.btnedit a:hover {
+		font-size: 20px;
+		background: none;
+}
 
 .required{
 	    color:red;
@@ -107,7 +121,6 @@ a:-webkit-any-link {
 	    list-style: none;
 	    margin: 10px 0 0 0;
 }
-
 
 .form-style-1 label{
    		margin:0 0 3px 0;
@@ -149,79 +162,36 @@ textarea {
 }
 .form-style-1 button {
 		height: 40px;
-}
 
-.edit-btn {
-    	background: #1abc9c;
-		border-radius: 50px;
-		color: #fff;
-		text-decoration: none;
-		text-align: center;
-		font-size: 1.45em;
-		font-weight: normal;
-		font-color: black;
-		margin: 0 15px;
-		width: 30%;
-		display: inline-block;
+
+
 }
-.save-btn {
-    background: DodgerBlue;
-    border: none;
-	border-radius: 50px;
+.edit-link a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
     text-align: center;
-	color: white;
-    font-size: 14px;
-	text-decoration: none;
-	font-size: 1.45em;
-	margin: 0 15px;
-	width: 30%;
-  	display: inline-block;
-  	vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.save-btn:hover {
-    background-color: RoyalBlue;
-	font-size: 1.6em;
-}
-.cancel-btn {
+button {
 		background: #76B3FA;
 		border-radius: 50px;
 		color: #fff;
 		text-decoration: none;
-		text-align: center;
 		font-size: 1.45em;
 		margin: 0 15px;
 		width: 30%;
-		display: inline-block;
+		display: relative;
 }
 
-.form-style-1 .delete-btn {
-		background: red;
-		border-radius: 50px;
-		color: #fff;
-		text-decoration: none;
-		text-align: center;
-		font-weight: normal;
-		font-size: 1.45em;
-		margin: 0 15px;
-		width: 30%;
-		display: inline-block;
-}
-
-.div1-inline .div2-inline .div3-inline {
-		display: inline-block;
-}
-
-.btndelete:hover, .btnedit:hover {
-		line-height: 20px;
-		font-size: 40px;
-}
-
-.div-icons {
-		line-height: 20px;
-}
-.edit-btn:focus {
+.form-style-1 .edit-btn:focus {
 		background: #d2d9dd;
+}
+
+.form-style-1 .edit-btn {
+    	background: #1abc9c;
 }
 
 .form-style-1 .cancel-btn {
@@ -230,6 +200,11 @@ textarea {
 
 .form-style-1 .edit-btn:hover {
     	background: #109177;
+		font-size: 18px;
+}
+
+.form-style-1 .delete-btn {
+		background: red;
 }
 
 .form-style-1 .delete-btn:hover {
@@ -242,9 +217,5 @@ textarea {
 		font-size: 18px;
 }
 
-i {
-	font-size: 30px;
-	padding: 10px;
-	margin-right: 1em
-}
+
 

@@ -1,3 +1,5 @@
+''' Don't mind comments they are for a reason that serves me.'''
+
 import os
 import sys                                                           # provides a number of functions and variables that can manipulate different parts of python runtime environment
 from sqlalchemy import Column, ForeignKey, Integer, String           # import the given classes from sqlalchemy. They will used in writing mapper code
